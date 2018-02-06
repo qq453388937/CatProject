@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    接收到表单的值:<br>
+    name ==> {{ name }}<br>
+    password ==> {{ password }}<br>
+    gender ==> {{ gender }}<br>
+    hobby_list ==> {{ hobby_list }}<br>
+    <ul>
+        <li>爱好列表</li>
+        {% for item in hobby_list %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</head>
+<body>
+
+</body>
+</html>

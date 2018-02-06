@@ -1,0 +1,109 @@
+{% load static from  staticfiles %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {#  使用static 必须 load static from staticfiles  #}
+    <!--static 反向解析会自动进入/static/目录,只需补全后面的相对目录即可! -->
+    {#    <script src="{% static 'booktest/JQ/jquery.min.js' %}"></script>#}
+    {#    <script src="/static/booktest/JQ/jquery.min.js"></script>#}
+    <script src="{% static "booktest/JQ/jquery.min.js" %}"></script>
+    <script>
+        $(function () {
+            // 默认传个0 过去
+            /*第一种后台列表嵌套列表*/
+            var temp = "{% csrf_token %}"
+            var tt = $(temp).val();
+            debugger;
+            $.post("/booktest/getSheng/0/", {"csrfmiddlewaretoken":$(temp).val()}, function (data,status) {
+                var a = 1;
+                alert(status);
+                //返回格式{"data":[[10001,"北京"],["10002","天津"]]
+                //alert(data.data);
+                /*javascript 访问字典有两种方式 一种是.data 一种是和python 相同的方式["data"]  python没有点的形式!!*/
+                //alert(data["data"])
+                var sheng_array = $("#sheng");  //这样写效率更高
+                $.each(data.data, function (k, v) { // k是索引从 0 开始!! 默认写一个是value
+                    sheng_array.append('<option value=' + v[0] + ' k=' + k + '>' + v[1] + '</option>');
+                });
+
+            }, "json");
+
+            $.post("/booktest/getShengDict/0/", {}, function (data) {
+                //返回格式{"data":[{"id": 110000, "areaTitle": "\u5317\u4eac\u5e02"},......]}
+                var sheng_dict = $("#shengDict");
+                $.each(data["data"], function (k, v) { //默认写一个是value
+                    sheng_dict.append('<option value=' + v["id"] + ' k=' + k + '>' + v.areaTitle + '</option>')
+                });
+            }, "json")
+
+
+            $("#sheng").change(function () {
+                //var self_value = $("#sheng").val();
+                var self_value = $(this).val();
+                var shi = $("#shi");
+                $("#shi :not(:first)").remove();
+                $("#qu :not(:first)").remove();
+                $.post("/booktest/getSheng/" + self_value + "/", {}, function (data) {
+                    $.each(data.data, function (k, v) {
+                        shi.append("<option value=" + v[0] + ">" + v[1] + "</option>")
+                    });
+                });
+            });
+
+            $("#shengDict").change(function () {
+                debugger
+                alert(this);
+                var self_value = $(this).val();// this 是下拉框js对象
+                var shi = $("#shi");
+                $("#shi :gt(0)").remove();//清空下拉不清空第一个
+                $("#qu :gt(0)").remove();
+                /*  第一种是通过URL 正则提取参数 第二种是通过post ajax 发送参数
+                 $.post("/booktest/getShengDict/"+self_value+"/",{},function (data) {
+                 $.each(data["data"],function (k,v) {
+                 shi.append("<option value="+v.id+">"+v["areaTitle"]+"</option>");
+                 });
+                 });
+                 */
+                $.post("/booktest/getShengByParameter/", {"id": self_value}, function (data) {
+                    $.each(data.data, function (k, v) {
+                        shi.append("<option value=" + v.id + ">" + v["areaTitle"] + "</option>");
+                    });
+                })
+            });
+
+            $("#shi").change(function () {
+                var self_value = $(this).val();
+                var qu = $("#qu");
+                qu.empty().append("<option value=\"0\">请选择</option>")
+                $.post("/booktest/getShengDict/" + self_value + "/", {}, function (data) {
+                    $.each(data.data, function (k, v) {
+                        qu.append("<option value=" + v.id + ">" + v["areaTitle"] + "</option>")
+                    })
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+<hr>
+<span id="sp">123123</span>
+列表版本
+<select id="sheng">
+    <option value="0">请选择</option>
+</select>
+字典版本
+<select id="shengDict">
+    <option value="0">请选择</option>
+</select>
+<select id="shi">
+    <option>请选择</option>
+</select>
+<select id="qu">
+    <option>请选择</option>
+</select>
+</body>
+</html>

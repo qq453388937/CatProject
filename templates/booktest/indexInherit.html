@@ -1,0 +1,16 @@
+{% extends "booktest/baseTemplate.html" %}
+{#{% extends "base.html" %}#}
+{#这里也要写模块下的某个模板 不能根据同级相对目录#}
+{#{% extends "baseTemplate.html" %}#}
+
+{% block content %}
+    <h1 style="color: red;" >继承页面的详细信息填充到父类模板中，并且替换父类模板中该位置原有的东西</h1>
+{#    #}
+{#    {{ aa|safe }}#}
+{#    {% autoescape on %}#}
+
+{#    {% endautoescape %}#}
+{% endblock content%}
+
+
+

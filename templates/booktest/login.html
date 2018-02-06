@@ -1,0 +1,55 @@
+{% load  customerfilter %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+{# 单纯字典key value #}
+你好 {{ name }}
+<br>
+{# 数组索引 #}
+{{ array.1 }}
+{# 字典key #}
+{{ dic.name }}
+<hr>
+{#<form action="/booktest/set_session/" method="post">#}
+<form action="{% url "main:set_session" %}" method="post">
+    设置ｓｅｓｓｉｏｎ <input type="text" name="txtName">
+    <input type="submit" value="设置session"/>
+    <hr/>
+
+    {#<a href="/booktest/del_session/">删除session</a>#}
+    <a href="{% url "main:del_session" %}">删除session</a>
+    {% if dic.name == "ppd" %}
+        <h1>ppd</h1>
+    {% endif %}
+    {#    {% if array.1|mod == 0 %}#}
+    {#        <h1>array.1能被2整除</h1>#}
+    {#    {% endif %}#}
+
+    {% if array.1|mod1:1 == 0 %}
+        <h1>array.1能被1整除</h1>
+    {% endif %}
+
+
+
+
+
+    <ul>
+        {% for item in array %}
+        {% empty %}
+            <li>kong</li>
+            {% if forloop.counter|mod %}
+                <li>{{ item }}</li>
+
+
+            {% endif %}
+
+
+        {% endfor %}
+    </ul>
+</form>
+</body>
+</html>

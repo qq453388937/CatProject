@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% comment %}
+多
+行
+注
+释
+{% endcomment %}
+{#单行注释#}
+{#{% dt|date:"Y-m-d" %}#}
+
+<a href="/booktest/eg/998/999/1000">展示</a>
+{# 空格字符串 传递参数 传递到正则分组中 #}
+<a href="{% url "main:show_eg" "998" "2000" "3000" %}">展示</a>
+{% if list|length > 1 %}
+{% for item in list %}
+    {% if forloop.counter|divisibleby:"2" %}
+
+        {{ forloop.counter }}:{{ item.show_name }}
+    {% endif %}
+{% empty %}
+    没有数据！！！！
+{% endfor %}
+{% endif %}
+</body>
+</html>

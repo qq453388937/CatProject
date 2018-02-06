@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    {#  模板中调用属性和方法都不能加括号  #}
+    {% for x in bookone.heroinfo_set.all %}
+        <li>{{ x.hname }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>

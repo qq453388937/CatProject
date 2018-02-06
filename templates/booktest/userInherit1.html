@@ -1,0 +1,14 @@
+{% extends "booktest/baseUser.html" %}
+{% block jscss %}
+<script>
+alert("ceshi");
+</script>
+{% endblock jscss %}
+
+
+{% block user_content %}
+    {{ user_name }}
+        用户一，登录进来了看见的页面
+{% endblock user_content %}
+
+继承页不在block内的内容无法显示

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1, h2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h2>前台模板不论调用first 还是all 等方法都不加括号</h2>
+<h1>{{ bookinfo.btitle }}</h1>
+<b>id=1 ==>{{ bookinfo_model.btitle }}</b>
+<b>集合使用book_exist==>{{ bookinfo_exist }}</b>
+<b>endwithmodel ==> {{ bookinfo_endwith_model.btitle }}</b>
+<hr/>
+<a href="#">{{ bookinfo_regex }}</a>.....<a href="#">{{ bookinfo_in_count }}</a>
+<b>{{ bookinfo_yeargt }}</b>
+<hr>
+<a href="#">{{ bookinfo_inner_join.count }}</a>
+<table border="1" width="100" height="100">
+    {% for book in bookinfo_inner_join %}
+        <tr>
+            <td>{{ book.btitle }}</td>
+        </tr>
+    {% endfor %}
+</table>
+<h2>maxdate --> {{ max_date }} avg_bread => {{ avg_bread }} </h2>
+<h3>f1 ==> {{ f1 }} f2 ==> {{ f2 }}</h3>
+<h1>q2 ==> {{ q2 }} q3 ==>{{ q3 }}</h1>
+<hr>
+<br>
+<b>不为ｎｕｌｌ的个数 {{ bookinfo_isnotnull_count }}</b>
+
+{# 前台模板只能调用first方法后台可以用first也可以用索引切片【0】#}
+<h2>{{ bookinfoexact.first.btitle }}</h2>
+<ul>
+    <li>展示包含天的</li>
+    {% for item in bookinfo.heroinfo_set.all %}
+        <li>{{ item.hname }}==>bookid:{{ item.book_id }}</li>
+    {% endfor %}
+</ul>
+
+<hr>
+<ul>
+    <li>展示包含天的</li>
+    {% for item in bookinfofilter %}
+        <li>{{ item.btitle }}</li>
+    {% endfor %}
+</ul>
+<hr><hr>
+<ul>
+    <li>一对多模糊查询</li>
+    {% for item in inner_join_1 %}
+        <li>{{ item.btitle }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

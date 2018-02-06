@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <!-- 上一页 -->
+    {% if page_model.has_previous %}
+        <a href="/booktest/page_show{{ page_model.number|add:-1 }}/">上一页</a>
+    {% endif %}
+
+    <!-- 数据 -->
+    {% for item in page_model %}
+        <li>{{ item.areaTitle }}</li>
+    {% endfor %}
+
+    <!-- 页码条 -->
+    {% for item in page_model.paginator.page_range %}
+        {% if item == page_model.number %}
+            <span>{{ item }}</span>
+        {% else %}
+            <a href="#">{{ item }}</a>
+        {% endif %}
+    {% endfor %}
+
+    <!-- 下一页 -->
+    {% if page_model.has_next %}
+        <a href="/booktest/page_show{{ page_model.number|add:1 }}/">下一页</a>
+    {% endif %}
+</ul>
+</body>
+</html>

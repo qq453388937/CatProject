@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {# 这个把静态文件放到了自己的应用里面的static文件夹里面，区别就是迁移的问题，放在自己应用好迁移   #}
+{#    ~/.virtualenvs/f1/lib/python2.7/site-packages/tinymce/static/tiny_mce/ #}
+
+    <script type="text/javascript" src='/static/tiny_mce/tiny_mce.js'></script>
+    <script type="text/javascript">
+        tinyMCE.init({
+            'mode': 'textareas',
+            'theme': 'advanced',
+            'width': 400,
+            'height': 1000
+        });
+    </script>
+</head>
+<body>
+<form method="post" action="/booktest/save_tinymce/">
+    {% csrf_token %}
+    <textarea name='comment'>哈哈，这是啥呀</textarea>
+    <br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

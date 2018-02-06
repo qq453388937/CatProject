@@ -1,0 +1,141 @@
+2018-01-14 11:14:00,486 - MyException.py[line:15] - ERROR: integer division or modulo by zero
+2018-01-14 19:36:27,130 - MyException.py[line:16] - ERROR: 
+2018-01-14 19:39:53,468 - MyException.py[line:16] - ERROR: unsupported operand type(s) for +: 'int' and 'str'
+2018-01-14 19:44:22,243 - MyException.py[line:16] - ERROR: not enough arguments for format string
+2018-01-14 19:44:43,834 - MyException.py[line:16] - ERROR: not enough arguments for format string
+2018-01-14 19:45:23,487 - MyException.py[line:16] - ERROR: not enough arguments for format string
+2018-01-14 19:58:45,564 - MyException.py[line:16] - ERROR: 'InMemoryUploadedFile' object has no attribute 'ext_name'
+2018-01-14 20:10:46,693 - MyException.py[line:16] - ERROR: not enough arguments for format string
+2018-01-14 23:28:17,005 - MyException.py[line:16] - ERROR: int() argument must be a string or a number, not 'NoneType'
+2018-01-14 23:52:25,164 - MyException.py[line:16] - ERROR: That page contains no results
+2018-01-15 01:14:32,639 - MyException.py[line:16] - ERROR: Invalid block tag: 'static'
+2018-01-15 01:16:20,870 - MyException.py[line:16] - ERROR: Invalid block tag: 'static'
+2018-01-15 01:18:53,895 - MyException.py[line:16] - ERROR: Invalid block tag: 'static'
+2018-01-15 19:45:14,798 - MyException.py[line:16] - ERROR: local variable 'all_province_list' referenced before assignment
+2018-01-15 19:46:10,001 - MyException.py[line:16] - ERROR: unsupported operand type(s) for +: 'ValuesQuerySet' and 'int'
+2018-01-15 19:46:14,446 - MyException.py[line:16] - ERROR: unsupported operand type(s) for +: 'ValuesQuerySet' and 'int'
+2018-01-15 19:49:31,323 - MyException.py[line:16] - ERROR: In order to allow non-dict objects to be serialized set the safe parameter to False
+2018-01-15 19:55:02,083 - MyException.py[line:16] - ERROR: In order to allow non-dict objects to be serialized set the safe parameter to False
+2018-01-15 19:55:21,453 - MyException.py[line:16] - ERROR: In order to allow non-dict objects to be serialized set the safe parameter to False
+2018-01-15 19:55:36,965 - MyException.py[line:16] - ERROR: [<AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, <AreaInfo: AreaInfo object>, '...(remaining elements truncated)...'] is not JSON serializable
+2018-01-15 19:55:55,513 - MyException.py[line:16] - ERROR: In order to allow non-dict objects to be serialized set the safe parameter to False
+2018-01-15 19:59:10,095 - MyException.py[line:16] - ERROR: In order to allow non-dict objects to be serialized set the safe parameter to False
+2018-01-15 19:59:29,173 - MyException.py[line:16] - ERROR: In order to allow non-dict objects to be serialized set the safe parameter to False
+2018-01-15 20:01:09,849 - MyException.py[line:16] - ERROR: In order to allow non-dict objects to be serialized set the safe parameter to False
+2018-01-15 20:01:22,593 - MyException.py[line:16] - ERROR: [{'id': 110000L}, {'id': 120000L}, {'id': 130000L}, {'id': 140000L}, {'id': 150000L}, {'id': 210000L}, {'id': 220000L}, {'id': 230000L}, {'id': 310000L}, {'id': 320000L}, {'id': 330000L}, {'id': 340000L}, {'id': 341402L}, {'id': 350000L}, {'id': 360000L}, {'id': 370000L}, {'id': 410000L}, {'id': 420000L}, {'id': 430000L}, {'id': 440000L}, '...(remaining elements truncated)...'] is not JSON serializable
+2018-01-15 20:01:50,792 - MyException.py[line:16] - ERROR: [{'id': 110000L}, {'id': 120000L}, {'id': 130000L}, {'id': 140000L}, {'id': 150000L}, {'id': 210000L}, {'id': 220000L}, {'id': 230000L}, {'id': 310000L}, {'id': 320000L}, {'id': 330000L}, {'id': 340000L}, {'id': 341402L}, {'id': 350000L}, {'id': 360000L}, {'id': 370000L}, {'id': 410000L}, {'id': 420000L}, {'id': 430000L}, {'id': 440000L}, '...(remaining elements truncated)...'] is not JSON serializable
+2018-01-15 20:01:52,237 - utils.py[line:89] - DEBUG: (0.002) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-15 20:01:52,242 - utils.py[line:89] - DEBUG: (0.005) SELECT `areainfo`.`id` FROM `areainfo` WHERE `areainfo`.`pid` IS NULL LIMIT 21; args=()
+2018-01-15 20:01:52,245 - utils.py[line:89] - DEBUG: (0.002) SELECT `areainfo`.`id` FROM `areainfo` WHERE `areainfo`.`pid` IS NULL LIMIT 21; args=()
+2018-01-15 20:01:52,246 - MyException.py[line:16] - ERROR: [{'id': 110000L}, {'id': 120000L}, {'id': 130000L}, {'id': 140000L}, {'id': 150000L}, {'id': 210000L}, {'id': 220000L}, {'id': 230000L}, {'id': 310000L}, {'id': 320000L}, {'id': 330000L}, {'id': 340000L}, {'id': 341402L}, {'id': 350000L}, {'id': 360000L}, {'id': 370000L}, {'id': 410000L}, {'id': 420000L}, {'id': 430000L}, {'id': 440000L}, '...(remaining elements truncated)...'] is not JSON serializable
+2018-01-15 20:01:53,404 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-15 20:01:53,405 - utils.py[line:89] - DEBUG: (0.001) SELECT `areainfo`.`id` FROM `areainfo` WHERE `areainfo`.`pid` IS NULL LIMIT 21; args=()
+2018-01-15 20:01:53,424 - utils.py[line:89] - DEBUG: (0.018) SELECT `areainfo`.`id` FROM `areainfo` WHERE `areainfo`.`pid` IS NULL LIMIT 21; args=()
+2018-01-15 20:01:53,425 - MyException.py[line:16] - ERROR: [{'id': 110000L}, {'id': 120000L}, {'id': 130000L}, {'id': 140000L}, {'id': 150000L}, {'id': 210000L}, {'id': 220000L}, {'id': 230000L}, {'id': 310000L}, {'id': 320000L}, {'id': 330000L}, {'id': 340000L}, {'id': 341402L}, {'id': 350000L}, {'id': 360000L}, {'id': 370000L}, {'id': 410000L}, {'id': 420000L}, {'id': 430000L}, {'id': 440000L}, '...(remaining elements truncated)...'] is not JSON serializable
+2018-01-15 20:01:54,489 - utils.py[line:89] - DEBUG: (0.001) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-15 20:01:54,491 - utils.py[line:89] - DEBUG: (0.001) SELECT `areainfo`.`id` FROM `areainfo` WHERE `areainfo`.`pid` IS NULL LIMIT 21; args=()
+2018-01-15 20:01:54,493 - utils.py[line:89] - DEBUG: (0.001) SELECT `areainfo`.`id` FROM `areainfo` WHERE `areainfo`.`pid` IS NULL LIMIT 21; args=()
+2018-01-15 20:01:54,494 - MyException.py[line:16] - ERROR: [{'id': 110000L}, {'id': 120000L}, {'id': 130000L}, {'id': 140000L}, {'id': 150000L}, {'id': 210000L}, {'id': 220000L}, {'id': 230000L}, {'id': 310000L}, {'id': 320000L}, {'id': 330000L}, {'id': 340000L}, {'id': 341402L}, {'id': 350000L}, {'id': 360000L}, {'id': 370000L}, {'id': 410000L}, {'id': 420000L}, {'id': 430000L}, {'id': 440000L}, '...(remaining elements truncated)...'] is not JSON serializable
+2018-01-15 20:02:01,815 - utils.py[line:89] - DEBUG: (0.001) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-15 20:02:01,816 - utils.py[line:89] - DEBUG: (0.001) SELECT `areainfo`.`id` FROM `areainfo` WHERE `areainfo`.`pid` IS NULL LIMIT 21; args=()
+2018-01-15 20:02:01,832 - utils.py[line:89] - DEBUG: (0.015) SELECT `areainfo`.`id` FROM `areainfo` WHERE `areainfo`.`pid` IS NULL LIMIT 21; args=()
+2018-01-15 20:02:01,833 - MyException.py[line:16] - ERROR: [{'id': 110000L}, {'id': 120000L}, {'id': 130000L}, {'id': 140000L}, {'id': 150000L}, {'id': 210000L}, {'id': 220000L}, {'id': 230000L}, {'id': 310000L}, {'id': 320000L}, {'id': 330000L}, {'id': 340000L}, {'id': 341402L}, {'id': 350000L}, {'id': 360000L}, {'id': 370000L}, {'id': 410000L}, {'id': 420000L}, {'id': 430000L}, {'id': 440000L}, '...(remaining elements truncated)...'] is not JSON serializable
+2018-01-15 20:02:22,698 - MyException.py[line:16] - ERROR: [{'id': 110000L}, {'id': 120000L}, {'id': 130000L}, {'id': 140000L}, {'id': 150000L}, {'id': 210000L}, {'id': 220000L}, {'id': 230000L}, {'id': 310000L}, {'id': 320000L}, {'id': 330000L}, {'id': 340000L}, {'id': 341402L}, {'id': 350000L}, {'id': 360000L}, {'id': 370000L}, {'id': 410000L}, {'id': 420000L}, {'id': 430000L}, {'id': 440000L}, '...(remaining elements truncated)...'] is not JSON serializable
+2018-01-15 20:02:42,448 - MyException.py[line:16] - ERROR: Cannot resolve keyword 'bTitle' into field. Choices are: areaPid, areaPid_id, areaTitle, areainfo, id
+2018-01-15 20:02:51,817 - MyException.py[line:16] - ERROR: [{'id': 110000L, 'areaTitle': u'\u5317\u4eac\u5e02'}, {'id': 120000L, 'areaTitle': u'\u5929\u6d25\u5e02'}, {'id': 130000L, 'areaTitle': u'\u6cb3\u5317\u7701'}, {'id': 140000L, 'areaTitle': u'\u5c71\u897f\u7701'}, {'id': 150000L, 'areaTitle': u'\u5185\u8499\u53e4\u81ea\u6cbb\u533a'}, {'id': 210000L, 'areaTitle': u'\u8fbd\u5b81\u7701'}, {'id': 220000L, 'areaTitle': u'\u5409\u6797\u7701'}, {'id': 230000L, 'areaTitle': u'\u9ed1\u9f99\u6c5f\u7701'}, {'id': 310000L, 'areaTitle': u'\u4e0a\u6d77\u5e02'}, {'id': 320000L, 'areaTitle': u'\u6c5f\u82cf\u7701'}, {'id': 330000L, 'areaTitle': u'\u6d59\u6c5f\u7701'}, {'id': 340000L, 'areaTitle': u'\u5b89\u5fbd\u7701'}, {'id': 341402L, 'areaTitle': u'\u5c45\u5de2\u533a'}, {'id': 350000L, 'areaTitle': u'\u798f\u5efa\u7701'}, {'id': 360000L, 'areaTitle': u'\u6c5f\u897f\u7701'}, {'id': 370000L, 'areaTitle': u'\u5c71\u4e1c\u7701'}, {'id': 410000L, 'areaTitle': u'\u6cb3\u5357\u7701'}, {'id': 420000L, 'areaTitle': u'\u6e56\u5317\u7701'}, {'id': 430000L, 'areaTitle': u'\u6e56\u5357\u7701'}, {'id': 440000L, 'areaTitle': u'\u5e7f\u4e1c\u7701'}, '...(remaining elements truncated)...'] is not JSON serializable
+2018-01-15 20:09:42,735 - MyException.py[line:16] - ERROR: In order to allow non-dict objects to be serialized set the safe parameter to False
+2018-01-15 20:09:43,897 - MyException.py[line:16] - ERROR: In order to allow non-dict objects to be serialized set the safe parameter to False
+2018-01-15 20:10:09,794 - MyException.py[line:16] - ERROR: [{'id': 110000L, 'areaTitle': u'\u5317\u4eac\u5e02'}, {'id': 120000L, 'areaTitle': u'\u5929\u6d25\u5e02'}, {'id': 130000L, 'areaTitle': u'\u6cb3\u5317\u7701'}, {'id': 140000L, 'areaTitle': u'\u5c71\u897f\u7701'}, {'id': 150000L, 'areaTitle': u'\u5185\u8499\u53e4\u81ea\u6cbb\u533a'}, {'id': 210000L, 'areaTitle': u'\u8fbd\u5b81\u7701'}, {'id': 220000L, 'areaTitle': u'\u5409\u6797\u7701'}, {'id': 230000L, 'areaTitle': u'\u9ed1\u9f99\u6c5f\u7701'}, {'id': 310000L, 'areaTitle': u'\u4e0a\u6d77\u5e02'}, {'id': 320000L, 'areaTitle': u'\u6c5f\u82cf\u7701'}, {'id': 330000L, 'areaTitle': u'\u6d59\u6c5f\u7701'}, {'id': 340000L, 'areaTitle': u'\u5b89\u5fbd\u7701'}, {'id': 341402L, 'areaTitle': u'\u5c45\u5de2\u533a'}, {'id': 350000L, 'areaTitle': u'\u798f\u5efa\u7701'}, {'id': 360000L, 'areaTitle': u'\u6c5f\u897f\u7701'}, {'id': 370000L, 'areaTitle': u'\u5c71\u4e1c\u7701'}, {'id': 410000L, 'areaTitle': u'\u6cb3\u5357\u7701'}, {'id': 420000L, 'areaTitle': u'\u6e56\u5317\u7701'}, {'id': 430000L, 'areaTitle': u'\u6e56\u5357\u7701'}, {'id': 440000L, 'areaTitle': u'\u5e7f\u4e1c\u7701'}, '...(remaining elements truncated)...'] is not JSON serializable
+2018-01-15 20:12:53,044 - MyException.py[line:16] - ERROR: [{'id': 110000L, 'areaTitle': u'\u5317\u4eac\u5e02'}, {'id': 120000L, 'areaTitle': u'\u5929\u6d25\u5e02'}, {'id': 130000L, 'areaTitle': u'\u6cb3\u5317\u7701'}, {'id': 140000L, 'areaTitle': u'\u5c71\u897f\u7701'}, {'id': 150000L, 'areaTitle': u'\u5185\u8499\u53e4\u81ea\u6cbb\u533a'}, {'id': 210000L, 'areaTitle': u'\u8fbd\u5b81\u7701'}, {'id': 220000L, 'areaTitle': u'\u5409\u6797\u7701'}, {'id': 230000L, 'areaTitle': u'\u9ed1\u9f99\u6c5f\u7701'}, {'id': 310000L, 'areaTitle': u'\u4e0a\u6d77\u5e02'}, {'id': 320000L, 'areaTitle': u'\u6c5f\u82cf\u7701'}, {'id': 330000L, 'areaTitle': u'\u6d59\u6c5f\u7701'}, {'id': 340000L, 'areaTitle': u'\u5b89\u5fbd\u7701'}, {'id': 341402L, 'areaTitle': u'\u5c45\u5de2\u533a'}, {'id': 350000L, 'areaTitle': u'\u798f\u5efa\u7701'}, {'id': 360000L, 'areaTitle': u'\u6c5f\u897f\u7701'}, {'id': 370000L, 'areaTitle': u'\u5c71\u4e1c\u7701'}, {'id': 410000L, 'areaTitle': u'\u6cb3\u5357\u7701'}, {'id': 420000L, 'areaTitle': u'\u6e56\u5317\u7701'}, {'id': 430000L, 'areaTitle': u'\u6e56\u5357\u7701'}, {'id': 440000L, 'areaTitle': u'\u5e7f\u4e1c\u7701'}, '...(remaining elements truncated)...'] is not JSON serializable
+2018-01-15 20:17:54,956 - MyException.py[line:16] - ERROR: 'dict' object has no attribute 'id'
+2018-01-15 20:21:51,294 - MyException.py[line:16] - ERROR: [{'id': 110000L, 'areaTitle': u'\u5317\u4eac\u5e02'}, {'id': 120000L, 'areaTitle': u'\u5929\u6d25\u5e02'}, {'id': 130000L, 'areaTitle': u'\u6cb3\u5317\u7701'}, {'id': 140000L, 'areaTitle': u'\u5c71\u897f\u7701'}, {'id': 150000L, 'areaTitle': u'\u5185\u8499\u53e4\u81ea\u6cbb\u533a'}, {'id': 210000L, 'areaTitle': u'\u8fbd\u5b81\u7701'}, {'id': 220000L, 'areaTitle': u'\u5409\u6797\u7701'}, {'id': 230000L, 'areaTitle': u'\u9ed1\u9f99\u6c5f\u7701'}, {'id': 310000L, 'areaTitle': u'\u4e0a\u6d77\u5e02'}, {'id': 320000L, 'areaTitle': u'\u6c5f\u82cf\u7701'}, {'id': 330000L, 'areaTitle': u'\u6d59\u6c5f\u7701'}, {'id': 340000L, 'areaTitle': u'\u5b89\u5fbd\u7701'}, {'id': 341402L, 'areaTitle': u'\u5c45\u5de2\u533a'}, {'id': 350000L, 'areaTitle': u'\u798f\u5efa\u7701'}, {'id': 360000L, 'areaTitle': u'\u6c5f\u897f\u7701'}, {'id': 370000L, 'areaTitle': u'\u5c71\u4e1c\u7701'}, {'id': 410000L, 'areaTitle': u'\u6cb3\u5357\u7701'}, {'id': 420000L, 'areaTitle': u'\u6e56\u5317\u7701'}, {'id': 430000L, 'areaTitle': u'\u6e56\u5357\u7701'}, {'id': 440000L, 'areaTitle': u'\u5e7f\u4e1c\u7701'}, '...(remaining elements truncated)...'] is not JSON serializable
+2018-01-15 20:24:15,918 - MyException.py[line:16] - ERROR: set([110000L, u'\u5317\u4eac\u5e02']) is not JSON serializable
+2018-01-15 20:24:16,648 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-15 20:24:16,665 - utils.py[line:89] - DEBUG: (0.016) SELECT `areainfo`.`id`, `areainfo`.`areaTitle`, `areainfo`.`pid` FROM `areainfo` WHERE `areainfo`.`pid` IS NULL; args=()
+2018-01-15 20:24:16,666 - MyException.py[line:16] - ERROR: set([110000L, u'\u5317\u4eac\u5e02']) is not JSON serializable
+2018-01-15 20:49:48,349 - MyException.py[line:16] - ERROR: In order to allow non-dict objects to be serialized set the safe parameter to False
+2018-01-17 20:00:55,212 - MyException.py[line:16] - ERROR: Cannot resolve keyword 'pid' into field. Choices are: areaPid, areaPid_id, areaTitle, areainfo, id
+2018-01-17 20:00:58,161 - MyException.py[line:16] - ERROR: Cannot resolve keyword 'pid' into field. Choices are: areaPid, areaPid_id, areaTitle, areainfo, id
+2018-01-17 20:02:56,746 - MyException.py[line:16] - ERROR: Cannot resolve keyword 'pid' into field. Choices are: areaPid, areaPid_id, areaTitle, areainfo, id
+2018-01-17 23:43:42,097 - MyException.py[line:16] - ERROR: {'comment': u'<p>\u54c8\u54c8\uff0c\u8fd9\u662f\u5565\u5440</p>'}
+2018-01-28 00:01:56,780 - MyException.py[line:16] - ERROR: Book/test.html
+2018-01-28 00:02:46,973 - MyException.py[line:16] - ERROR: Book/test.html
+2018-01-28 00:03:50,107 - MyException.py[line:16] - ERROR: Book/test.html
+2018-01-28 00:03:50,770 - MyException.py[line:16] - ERROR: Book/test.html
+2018-01-28 00:07:06,843 - MyException.py[line:16] - ERROR: Book/booklist.html
+2018-01-28 00:07:24,244 - MyException.py[line:16] - ERROR: Book/booklist.html
+2018-01-28 00:07:35,930 - MyException.py[line:16] - ERROR: Book/booklist.html
+2018-01-28 00:07:38,519 - MyException.py[line:16] - ERROR: 
+2018-01-28 00:07:38,521 - utils.py[line:89] - DEBUG: (0.001) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-28 00:07:38,522 - utils.py[line:89] - DEBUG: (0.001) SELECT `OA_BookInfo`.`id`, `OA_BookInfo`.`name` FROM `OA_BookInfo`; args=()
+2018-01-28 00:07:38,523 - MyException.py[line:16] - ERROR: 
+2018-01-28 00:07:39,531 - utils.py[line:89] - DEBUG: (0.001) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-28 00:07:39,532 - utils.py[line:89] - DEBUG: (0.000) SELECT `OA_BookInfo`.`id`, `OA_BookInfo`.`name` FROM `OA_BookInfo`; args=()
+2018-01-28 00:07:39,533 - MyException.py[line:16] - ERROR: 
+2018-01-28 00:07:40,244 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-28 00:07:40,245 - utils.py[line:89] - DEBUG: (0.001) SELECT `OA_BookInfo`.`id`, `OA_BookInfo`.`name` FROM `OA_BookInfo`; args=()
+2018-01-28 00:07:40,245 - MyException.py[line:16] - ERROR: 
+2018-01-28 00:07:41,722 - utils.py[line:89] - DEBUG: (0.001) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-28 00:07:41,726 - utils.py[line:89] - DEBUG: (0.001) SELECT `OA_BookInfo`.`id`, `OA_BookInfo`.`name` FROM `OA_BookInfo`; args=()
+2018-01-28 00:07:41,728 - MyException.py[line:16] - ERROR: 
+2018-01-28 00:07:42,503 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-28 00:07:42,505 - utils.py[line:89] - DEBUG: (0.000) SELECT `OA_BookInfo`.`id`, `OA_BookInfo`.`name` FROM `OA_BookInfo`; args=()
+2018-01-28 00:07:42,505 - MyException.py[line:16] - ERROR: 
+2018-01-28 00:07:49,644 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-28 00:07:49,648 - utils.py[line:89] - DEBUG: (0.004) SELECT `OA_BookInfo`.`id`, `OA_BookInfo`.`name` FROM `OA_BookInfo`; args=()
+2018-01-28 00:07:49,649 - MyException.py[line:16] - ERROR: 
+2018-01-28 00:07:51,499 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-28 00:07:51,500 - utils.py[line:89] - DEBUG: (0.000) SELECT `OA_BookInfo`.`id`, `OA_BookInfo`.`name` FROM `OA_BookInfo`; args=()
+2018-01-28 00:07:51,501 - MyException.py[line:16] - ERROR: 
+2018-01-31 16:21:42,006 - MyException.py[line:16] - ERROR: global name 'mycookie' is not defined
+2018-01-31 16:54:25,022 - MyException.py[line:16] - ERROR: ('s_name', '6666')
+2018-01-31 16:54:25,056 - utils.py[line:89] - DEBUG: (0.015) UPDATE `django_session` SET `session_data` = 'MDg0MzE2NTM1ZGFjYjIzZGMwMjVlNjA3MWIwYTk0ZmNmMTMyODAzODp7fQ==', `expire_date` = '2018-02-14 08:54:25.039653' WHERE `django_session`.`session_key` = 'znk39rudem6mab7n0t4f836yzgmb20if'; args=(u'MDg0MzE2NTM1ZGFjYjIzZGMwMjVlNjA3MWIwYTk0ZmNmMTMyODAzODp7fQ==', u'2018-02-14 08:54:25.039653', u'znk39rudem6mab7n0t4f836yzgmb20if')
+2018-01-31 16:57:25,553 - MyException.py[line:16] - ERROR: ('s_name', '6666')
+2018-01-31 16:58:04,778 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-31 16:58:04,813 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-31 16:58:04,823 - utils.py[line:89] - DEBUG: (0.009) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'znk39rudem6mab7n0t4f836yzgmb20if' AND `django_session`.`expire_date` > '2018-01-31 08:58:04.688983'); args=('znk39rudem6mab7n0t4f836yzgmb20if', u'2018-01-31 08:58:04.688983')
+2018-01-31 17:00:58,975 - MyException.py[line:16] - ERROR: ('kkk', '6666')
+2018-01-31 17:01:42,475 - MyException.py[line:16] - ERROR: ('kkk', '6666')
+2018-01-31 18:42:16,073 - MyException.py[line:16] - ERROR: Invalid filter: 'mod'
+2018-01-31 18:44:24,578 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-31 18:44:24,617 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-31 18:44:24,620 - utils.py[line:89] - DEBUG: (0.003) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'znk39rudem6mab7n0t4f836yzgmb20if' AND `django_session`.`expire_date` > '2018-01-31 10:44:24.501343'); args=('znk39rudem6mab7n0t4f836yzgmb20if', u'2018-01-31 10:44:24.501343')
+2018-01-31 18:44:24,678 - MyException.py[line:16] - ERROR: mod requires 1 arguments, 2 provided
+2018-01-31 18:44:55,294 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-31 18:44:55,309 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-01-31 18:44:55,310 - utils.py[line:89] - DEBUG: (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'znk39rudem6mab7n0t4f836yzgmb20if' AND `django_session`.`expire_date` > '2018-01-31 10:44:55.211848'); args=('znk39rudem6mab7n0t4f836yzgmb20if', u'2018-01-31 10:44:55.211848')
+2018-02-03 17:08:08,220 - MyException.py[line:16] - ERROR: 
+2018-02-03 17:15:23,765 - MyException.py[line:16] - ERROR: 'NoneType' object has no attribute 'name'
+2018-02-03 20:11:15,835 - MyException.py[line:16] - ERROR: object() takes no parameters
+2018-02-03 20:15:40,591 - MyException.py[line:16] - ERROR: 'int' object is not callable
+2018-02-03 20:46:15,648 - MyException.py[line:16] - ERROR: That page contains no results
+2018-02-03 20:46:19,588 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-02-03 20:46:19,590 - utils.py[line:89] - DEBUG: (0.002) SELECT COUNT('*') AS `__count` FROM `areainfo`; args=('*',)
+2018-02-03 20:46:19,598 - utils.py[line:89] - DEBUG: (0.006) SELECT `areainfo`.`id`, `areainfo`.`areaTitle`, `areainfo`.`pid` FROM `areainfo` LIMIT 10 OFFSET 3240; args=()
+2018-02-03 20:46:21,930 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-02-03 20:46:21,931 - utils.py[line:89] - DEBUG: (0.002) SELECT COUNT('*') AS `__count` FROM `areainfo`; args=('*',)
+2018-02-03 20:46:21,936 - utils.py[line:89] - DEBUG: (0.003) SELECT `areainfo`.`id`, `areainfo`.`areaTitle`, `areainfo`.`pid` FROM `areainfo` LIMIT 10; args=()
+2018-02-03 20:46:38,439 - utils.py[line:89] - DEBUG: (0.001) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-02-03 20:46:38,441 - utils.py[line:89] - DEBUG: (0.002) SELECT COUNT('*') AS `__count` FROM `areainfo`; args=('*',)
+2018-02-03 20:46:38,447 - utils.py[line:89] - DEBUG: (0.004) SELECT `areainfo`.`id`, `areainfo`.`areaTitle`, `areainfo`.`pid` FROM `areainfo` LIMIT 8 OFFSET 3250; args=()
+2018-02-03 20:46:40,844 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-02-03 20:46:40,847 - utils.py[line:89] - DEBUG: (0.002) SELECT COUNT('*') AS `__count` FROM `areainfo`; args=('*',)
+2018-02-03 20:46:40,865 - utils.py[line:89] - DEBUG: (0.009) SELECT `areainfo`.`id`, `areainfo`.`areaTitle`, `areainfo`.`pid` FROM `areainfo` LIMIT 10 OFFSET 3240; args=()
+2018-02-03 20:46:43,080 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-02-03 20:46:43,082 - utils.py[line:89] - DEBUG: (0.002) SELECT COUNT('*') AS `__count` FROM `areainfo`; args=('*',)
+2018-02-03 20:46:43,087 - utils.py[line:89] - DEBUG: (0.003) SELECT `areainfo`.`id`, `areainfo`.`areaTitle`, `areainfo`.`pid` FROM `areainfo` LIMIT 8 OFFSET 3250; args=()
+2018-02-03 20:47:04,487 - utils.py[line:89] - DEBUG: (0.001) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-02-03 20:47:04,494 - utils.py[line:89] - DEBUG: (0.006) SELECT COUNT('*') AS `__count` FROM `areainfo`; args=('*',)
+2018-02-03 20:47:04,504 - utils.py[line:89] - DEBUG: (0.005) SELECT `areainfo`.`id`, `areainfo`.`areaTitle`, `areainfo`.`pid` FROM `areainfo` LIMIT 8 OFFSET 3250; args=()
+2018-02-03 20:47:04,928 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-02-03 20:47:04,930 - utils.py[line:89] - DEBUG: (0.002) SELECT COUNT('*') AS `__count` FROM `areainfo`; args=('*',)
+2018-02-03 20:47:04,940 - utils.py[line:89] - DEBUG: (0.005) SELECT `areainfo`.`id`, `areainfo`.`areaTitle`, `areainfo`.`pid` FROM `areainfo` LIMIT 10 OFFSET 3240; args=()
+2018-02-03 20:47:06,115 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-02-03 20:47:06,121 - utils.py[line:89] - DEBUG: (0.004) SELECT COUNT('*') AS `__count` FROM `areainfo`; args=('*',)
+2018-02-03 20:47:06,127 - utils.py[line:89] - DEBUG: (0.004) SELECT `areainfo`.`id`, `areainfo`.`areaTitle`, `areainfo`.`pid` FROM `areainfo` LIMIT 8 OFFSET 3250; args=()
+2018-02-03 20:47:19,284 - utils.py[line:89] - DEBUG: (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2018-02-03 20:47:19,286 - utils.py[line:89] - DEBUG: (0.002) SELECT COUNT('*') AS `__count` FROM `areainfo`; args=('*',)
+2018-02-03 20:47:19,296 - utils.py[line:89] - DEBUG: (0.005) SELECT `areainfo`.`id`, `areainfo`.`areaTitle`, `areainfo`.`pid` FROM `areainfo` LIMIT 10 OFFSET 3240; args=()
+2018-02-03 21:17:54,434 - MyException.py[line:16] - ERROR: count() takes exactly 2 arguments (1 given)
+2018-02-03 23:24:59,694 - MyException.py[line:16] - ERROR: 'PageBarHelper.PageBarHelper' is not a valid tag library: Template library PageBarHelper.PageBarHelper not found, tried django.templatetags.PageBarHelper.PageBarHelper,django.contrib.admin.templatetags.PageBarHelper.PageBarHelper,django.contrib.staticfiles.templatetags.PageBarHelper.PageBarHelper,booktest.templatetags.PageBarHelper.PageBarHelper,tinymce.templatetags.PageBarHelper.PageBarHelper,haystack.templatetags.PageBarHelper.PageBarHelper
+2018-02-03 23:24:59,695 - MyException.py[line:16] - ERROR: 'PageBarHelper.PageBarHelper' is not a valid tag library: Template library PageBarHelper.PageBarHelper not found, tried django.templatetags.PageBarHelper.PageBarHelper,django.contrib.admin.templatetags.PageBarHelper.PageBarHelper,django.contrib.staticfiles.templatetags.PageBarHelper.PageBarHelper,booktest.templatetags.PageBarHelper.PageBarHelper,tinymce.templatetags.PageBarHelper.PageBarHelper,haystack.templatetags.PageBarHelper.PageBarHelper

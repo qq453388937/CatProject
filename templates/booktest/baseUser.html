@@ -1,0 +1,18 @@
+{% extends "booktest/baseTemplate.html" %}
+{% block content %}
+    <table border="1">
+        <tr>
+            <td>
+                用户导航
+            </td>
+            <td height="300">
+                {% block user_content %}
+                    用户导航模板相关
+                {% endblock user_content %}
+            </td>
+        </tr>
+
+    </table>
+
+
+{% endblock content%}

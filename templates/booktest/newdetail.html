@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+暂时没有
+<hr/>
+{{ bookone.btitle }}
+{{ id }}<br/>
+英雄列表<br>
+{{ herolist }}
+<ul>
+    {% for x in herolist %}
+        <li>{{ x.hname }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

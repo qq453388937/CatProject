@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baseTemlate</title>
+    {% block jscss %}
+    {% endblock jscss %}
+</head>
+<body>
+<h1>LOGO顶部相关</h1>
+<hr/>
+{% block content %}
+    baseTemplate模板里content定义的东东
+{% endblock content %}
+<hr/>
+<h2>联系我们底部相关{{ user_name|default:"未登录" }}</h2>
+
+</body>
+</html>

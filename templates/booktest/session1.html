@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    你好 : {{ name }}<br/>
+{#    <a href="/booktest/session2/">登录</a><br/>#}
+    <a href="{%url "main:session2" %}">登录</a><br/>
+{#    <a href="/booktest/session2_delete/">退出</a>#}
+    <a href="{%url "main:session2_delete"%}">退出</a>
+
+</head>
+<body>
+
+</body>
+</html>

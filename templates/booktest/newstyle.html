@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+新式写法
+<hr/>
+{{ testdata }}
+<hr/>
+<ul>
+    {% for x in booklist %}
+        {#  请求mvt 中的views.py的方法名      #}
+        {#        <li><a href="showdetail?{{ x.id }}">{{ x.btitle }}</a></li>#}
+        {#        <li><a href="/new_style/{{ x.id }}">{{ x.btitle }}</a></li>#}
+        <li><a href="{{ x.id }}">{{ x.btitle }}</a></li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

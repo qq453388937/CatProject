@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+
+    {#导入jquery#}
+    <script src="/static/booktest/JQ/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#ajaxbtn').click(function () {
+                $.ajax({
+                    type: "get",
+                    dataType: "json",// jsonp
+                    data: {"csrfmiddlewaretoken":"{% csrf_token %}"},
+                    url: "/booktest/ajax_request/"
+                }).done(function (data) {
+                    $('#test').empty()
+                    alert(JSON.stringify(data))
+                    var booklist = data.data;
+                    $.each(booklist, function (k, v) {
+                        $('#test').append("<li>" + v.btitle + "</li>");
+                    })
+                }).fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                    // 状态码
+                    alert(XMLHttpRequest.status);
+                    // 状态
+                    alert(XMLHttpRequest.readyState);
+                    // 错误信息
+                    alert(textStatus);
+                });
+
+{#                                $.post("/booktest/ajax_request/", {"csrfmiddlewaretoken":"X2dboSApa3pQTwCW6sDQReXxjlNvxJ2u"}, function (data) {#}
+{#                                    var booklist = data.data;#}
+{#                                    alert(JSON.stringify(booklist))#}
+{#                                    $('#test').empty()#}
+{#                                    $.each(booklist, function (k, v) {#}
+{#                                        $('#test').append("<li>" + v.btitle + "</li>");#}
+{#                                    })#}
+{#                                    for(var i=0;i<booklist.length;i++){#}
+{#                                        $('#test').append("<li>" + booklist[i].btitle + "</li>");#}
+{#                                    }#}
+{##}
+{##}
+{#                                    for (var i in booklist) {#}
+{#                                        alert(i);#}
+{#                                        $('#test').append("<li>" + booklist[i].btitle + "</li>");#}
+{#                                    }#}
+{##}
+{#                            });#}
+            });
+        });
+
+
+
+    </script>
+
+
+</head>
+<body>
+
+<input id="ajaxbtn" type="button" value="ajax_request">
+
+<ul>
+    <li>鹅鹅鹅</li>
+    <li>曲项向天歌</li>
+    <li>白毛浮绿水</li>
+    <li>红掌拨清波</li>
+</ul>
+
+<ul id="test" style="background: red;width: 100px;height: 100px;">
+    <li>床前明月光</li>
+    <li>地上鞋两双</li>
+    <li>举头望明月</li>
+    <li>低头思故乡</li>
+</ul>
+
+</body>
+</html>

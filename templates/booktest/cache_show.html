@@ -1,0 +1,19 @@
+{% load cache %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+show cache2
+
+<ul>
+    {% cache 20 my_name_cache1 %}
+        {% for item in book_list %}
+            <li>{{ item.btitle }}</li>
+        {% endfor %}
+    {% endcache %}
+</ul>
+</body>
+</html>

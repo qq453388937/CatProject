@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>{{ page_model_endindex }}</h4>
+<hr>
+<h1>分页数据</h1>
+<h2>总页数:{{ pageinator_model_count }}</h2>
+<h2>页码列表:{{ pageinator_range }}</h2>
+<h2>页码列表2通过pageinator_model对象点出来.page_range:{{ pageinator_model.page_range }}</h2>
+<h2>页码列表3通过page_model.paginator对象间接点出来.page_range:{{ page_model.paginator.page_range }}</h2>
+<h2>当前页:{{ page_index }}</h2>
+<h3>当前页有多少条记录数:{{ len_page_model }}</h3>
+<h3>当前页的序号，从1开始:{{ page_model_number }}</h3>
+<hr>
+<h4>遍历输出page_model_object_list</h4>
+<ul>
+    {% for item in page_model_object_list %}
+        <li>{{ item.btitle }}</li>
+    {% endfor %}
+</ul>
+<hr>
+<h4>遍历输出page_model</h4>
+<ul>
+    {% for item in page_model %}
+        <li>{{ item.btitle }}</li>
+    {% endfor %}
+</ul>
+页码条遍历最复杂的<br>
+{% for item in page_model.paginator.page_range %}
+
+    {% if item == page_model_number %}
+        {{ item }}
+    {% else %}
+        <a href="{% url "main:pageinator_page"  item %} ">{{ item }}</a>
+        {#        <a href="/booktest/pageinator_page/{{ item }}/">{{ item }}</a>#}
+    {% endif %}
+{% endfor %}
+
+
+</body>
+</html>

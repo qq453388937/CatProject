@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{# max__bread #}
+<h1>{{ maxbread.bread__max }}</h1>
+<h1>关联查询11</h1>
+<ul>
+    {% for item in inner_join_1 %}
+        <li>{{ item.id }}</li><li>{{ item.btitle }}</li>
+    {% endfor %}
+</ul>
+
+<hr>
+<ul>
+    <h1>查询包含天的书关联的所有的英雄</h1>
+    {% for item in inner_join_2 %}
+        <li>{{ item.id }}</li><li>{{ item.hname }}</li>
+    {% endfor %}
+
+<hr>
+
+<ul>
+{#  默认是/1/  #}
+    <a href="{{ 12312 }}/">啊打我都</a>
+    {{ book_list }}
+    {% for book in book_list %}
+        <li>{{ book.btitle }}　　</li>
+    {% endfor %}
+    {{ maxdate }}
+</ul>
+<hr/>
+<table border="1" cellpadding="0" cellspacing="0">
+    {{ read_count_list }}
+    {% for item in read_count_list %}
+        <tr>
+            <td>{{ item.btitle }}</td>
+            <td>阅读量：&nbsp;{{ item.bread }}</td>
+        </tr>
+    {% endfor %}
+</table>
+<hr/>
+<ul>
+    {% for item in read_count_more_pinglun_list %}
+        <li>阅读量大于评论量的：{{ item.btitle }}</li>
+    {% endfor %}
+
+</ul>
+<hr/>
+<ul>
+    {% for item in q_model_list %}
+        <li>q_model的标题{{ item.btitle }}</li>
+    {% endfor %}
+</ul>
+<hr/>
+<ul>
+    {% for item in not_q_model %}
+        <li>q对象取非{{ item.btitle }}</li>
+    {% endfor %}
+</ul>
+
+<hr>
+
+</body>
+</html>

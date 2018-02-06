@@ -1,0 +1,3 @@
+{{ object.btitle }}
+{{ object.bread }}
+{{ object.bcomment }}

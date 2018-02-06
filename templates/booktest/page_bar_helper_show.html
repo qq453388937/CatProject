@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    {% for item in page_model %}
+        <li> {{ item.areaTitle }} </li>
+    {% endfor %}
+    {{ page_bar_html|safe }}
+</ul>
+
+</body>
+</html>

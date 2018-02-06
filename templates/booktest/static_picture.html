@@ -1,0 +1,28 @@
+{# 固定写发 #}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/static/booktest/JQ/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#d1').css({"color":"red"});
+        });
+
+    </script>
+
+</head>
+<body>
+{% load static from  staticfiles %}
+{# {%   load staticfiles %} #}
+一般路径请求图片：<img src="/static/booktest/1.png" alt="显示图片" width="100" height="100"><br>
+反向解析图片路径自定义ｉｍａｇｅｓ版本:<img src="{% static "booktest/images/2.png" %}" alt="显示图片" width="100" height="100"><br>
+反向解析图片路径:<img src="{% static "booktest/1.png" %}" alt="显示图片" width="100" height="100">
+反向解析图片路径:<img src="{% static "booktest/2.png" %}" alt="显示图片" >
+<div id="d1">666</div>
+
+
+</body>
+</html>

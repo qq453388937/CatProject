@@ -1,0 +1,3 @@
+{{ object.hname }}
+{{ object.hgender }}
+{{ object.hcontent }}

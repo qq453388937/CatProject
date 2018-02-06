@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Area</title>
+</head>
+<body>
+当前地区 {{ area_shijiazhuang.atitle }}
+<hr/>
+上级地区 {{ area_shijiazhuang.aPid.atitle }}
+<hr/>
+下级地区
+<ul>
+    {#                               模板语言中调用方法无需加括号          #}
+    {% for item in area_shijiazhuang.area_set.all %}
+        <li>{{ item.atitle }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
